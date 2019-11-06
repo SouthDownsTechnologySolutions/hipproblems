@@ -2,6 +2,15 @@
 
 When a user runs a hotel search on Hipmunk we search many partner sites simultaneously to ensure we give them the best options. In this problem, you'll build an API that queries each of our different partners and merges their results together.
 
+# Set-up
+
+You'll need python 3 installed on your system to run the partner sites server
+and the test suite.
+
+    $ python -m venv venv
+    $ . ./venv/bin/activate
+    $ pip install -r hotel_search/requirements.txt
+
 # Background
 
 Hipmunk has a scraper farm that we use to search our partner sites. The name scraper is a legacy holdover from when we actually scraped them. Nowadays, we query their APIs :)
