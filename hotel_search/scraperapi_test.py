@@ -38,7 +38,7 @@ def test_hotel_search():
     else:
         msg += " Looks good!"
 
-    print msg
+    print(msg)
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@ class Scraper(object):
         # wait a bit
         yield gen.sleep(2)
 
-        self.load_fake_results(xrange(1, 20, self.step))
+        self.load_fake_results(range(1, 20, self.step))
         self.results.sort(key=lambda r: r['ecstasy'], reverse=True)
 
         raise gen.Return(self.results)
@@ -23,7 +23,7 @@ class Scraper(object):
         dir_path = os.path.dirname(os.path.realpath(__file__))
         with open(dir_path + '/data.json') as data_file:
             dataset = json.load(data_file)
-            data_keys = dataset.keys()
+            data_keys = list(dataset.keys())
 
         for i in range_iter:
             data = dataset[data_keys[i]]
