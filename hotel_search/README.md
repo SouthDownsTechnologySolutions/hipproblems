@@ -28,7 +28,7 @@ Your task is to build a web application for hotel search. Query each provider vi
 
 Requirements:
 - You must search all providers via HTTP.
-- The results should be sorted by ecstasy.
+- The results should be sorted by ecstasy, which represents each hotel property's aggregate value. Higher is better.
 - The scraper APIs already return results sorted by ecstasy, and you should take advantage of this!
 
 You may write your backend in whatever language you want. It should run on port 8000 and expose one HTTP endpoint:
