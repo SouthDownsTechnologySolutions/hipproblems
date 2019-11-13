@@ -31,20 +31,20 @@ Here are the providers that are available:
 - Travelocity
 - Hilton
 
-# The Problem
+# The Challenge
 
-Your job is to build an API that queries each provider via HTTP and returns a merged list containing all of their results.
+Your task is to build a web application for hotel search. Query each provider via HTTP, merge their results, and display the results in a UI.
 
 Requirements:
-- You must search all providers via HTTP
-- The results should be sorted by ecstasy
-- The scraper APIs already return results sorted by ecstasy, you should take advantage of this!
+- You must search all providers via HTTP.
+- The results should be sorted by ecstasy, which represents each hotel property's aggregate value. Higher is better.
+- The scraper APIs already return results sorted by ecstasy, and you should take advantage of this!
 
-You may write your API in whatever language you want. It should run on port 8000 and expose one HTTP endpoint:
+You may write your backend in whatever language you want. It should run on port 8000 and expose one HTTP endpoint:
 
 - `GET /hotels/search` - returns hotel results from all providers as JSON
 
-The response should look identical to a scraper API response except that it will contain results from all providers while still sorted by ecstasy.
+The backend response should look identical to a scraper API response except that it will contain results from all providers while still being sorted by ecstasy.
 
 # Testing
 
